@@ -1,0 +1,97 @@
+---
+title: ""
+format: docx
+editor: visual
+---
+
+\newpage
+
+# Title page
+
+ \
+ \
+ \
+ \
+
+\[TITLE\]
+
+ \
+
+*\[SUBTITLE\]*
+
+ \
+ \
+ \
+ \
+
+\newpage
+
+# Author's declaration
+
+ \
+ \
+ \
+ \
+
+I am the author of this report and confirm that to the best of my knowledge this report accurately describes the results of the study.
+
+ \
+ \
+ \
+ \
+
+Marton Kiss, MD (signature): ....................................
+
+ \
+ \
+ \
+
+## Version Control
+
+ \
+
+-   v.0.1: First draft version
+
+\newpage
+
+# List of abbreviations
+
+ \
+
+-   API - Active pharmaceutical ingredient
+
+-   AIC - Akaike's Information Criterion
+
+-   BIC - Baysean Information Criterion
+
+-   ....
+
+\newpage
+
+# Introduction
+
+  
+
+\[...\] It is my report template in Quarto. It has most Rmd features and can generate .docx. Table of Contents should be wrangled after that at the moment. PDF can be generated via Word (save as..). The auto-generated .html is nice too. Computationally intensive stuff should be referenced. None of this Vignette precompile nonsense I've been working so hard to implement :( Computationally intensive stuff should be referenced externally.
+
+# Description of the study
+
+ \
+
+\[...\]
+
+ 
+
+# Data extraction
+
+     
+
+\[...\]
+
+  
+
+# Missing data
+
+  
+
+\[...\]

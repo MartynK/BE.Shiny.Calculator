@@ -1,0 +1,62 @@
+---
+title: "[TITLE]"
+author: "Márton Kiss, MD"
+format:
+  docx:
+    fig-width: 6
+    fig-height: 4
+    reference-doc: custom_ref_doc.docx
+  html: default
+editor: visual
+prefer-html: true
+toc: true
+toc-depth: 2
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+
+fil <- here::here("inst","extdata","Iris.xls")
+
+source( here::here( "inst", "report", "functions", "load_stuff.r"))
+source( here::here( "inst", "report", "functions", "wrangling.r"))
+
+# source_all_files(here::here("inst","example_quarto","backend")) # Run slow stuff; 
+##recommend running separately
+
+load_all_Rdata(directory=here::here("inst","report","backend")) # Load slow suff's output
+
+```
+
+```{r, child = here::here("inst", "report", "child1_preamble.qmd")}
+```
+
+\newpage
+
+```{r, child = here::here("inst", "report", "child2.qmd")}
+```
+
+\newpage
+
+# Remarks
+
+### MD5 checksum of the database used
+
+```{r, comment='', results='asis'}
+tools::md5sum(fil) # %>% as.character # Uncomment reporting path is not desirable
+```
+
+### Other information regarding the document's compilation
+
+```{r, comment='', results='asis'}
+sessionInfo() %>% report::report() %>% cat()
+```
+
+### Time of compilation
+
+```{r last_chunk, results='asis'}
+Sys.time() %>% as.character %>% cat
+save.image(file = here::here("inst","report","end_state.rdata"))
+```

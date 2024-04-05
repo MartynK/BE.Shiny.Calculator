@@ -1,0 +1,12 @@
+^renv$
+^renv\.lock$
+^\.Rproj\.user$
+^\.Rproj\.user$
+^\vignettes\01_chap1.rmd$
+^\vignettes\cyclic_chap2.rmd$
+^\docs\articles\01_chap1.html$
+^.*\.Rproj$
+^PROJECTNAME\.Rproj$
+^LICENSE\.md$
+^README\.Rmd$
+^cran-comments\.md$

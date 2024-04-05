@@ -1,0 +1,87 @@
+---
+title: "child2"
+format: docx
+editor: visual
+---
+
+# Examples for quick reference
+
+## Tables
+
+Tables may be in a huxtable object for "seamless" word processing. The resulting table is ugly.
+
+ \
+
+```{r}
+
+# generating the table which is comp.expensive for some reason
+tab <- data %>%
+  dplyr::select(!(species_no)) %>%
+  gtsummary::tbl_summary(
+    by = species_char
+  )
+
+tab %>%
+  as_hux_table()
+
+```
+
+ \
+
+Having a custom ref. docx file, I played around with the formatting and cooked up something passable. Its not modifiable however.
+
+ \
+
+```{r}
+#| df-print: kable
+#| tbl_colwidths: auto
+
+tab %>%
+    gtsummary::as_kable_extra(table.attr = 'data-quarto-disable-processing="true"',
+          caption = "Example table") 
+
+
+```
+
+ \
+
+You *will* face an issue where a package outputs a "marvellously formatted" html table which would be horrible for your use case. That is a promise, but don't know how to handle it.
+
+ \
+
+```{r}
+
+mod <- lm(petal_width ~ species_char + petal_length, data)
+
+sjPlot::tab_model(mod)
+
+
+```
+
+ \
+
+Plots are nothing fancy.
+
+ \
+
+```{r}
+
+ggstatsplot::ggbetweenstats(data, 
+                            species_char,
+                            petal_width,
+                            results.subtitle = FALSE) +
+  theme_bw()
+
+```
+
+ \
+
+Text outputs; prints computationally intensive output loaded at the beginning.
+
+ \
+
+```{r}
+
+cat(pi_estimate)
+
+```

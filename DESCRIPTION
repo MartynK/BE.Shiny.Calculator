@@ -1,0 +1,25 @@
+Package: HUPHAR2024.PK.presentation
+Title: Vibrance of effects in compartmental PK models INCOMPLETE DEFUNCT
+Version: 0.2.0
+Authors@R: 
+    person("Márton", "Kiss", , "mrkmarton@gmail.com", role = c("aut", "cre"))
+Description: Repo for my (planned) presentation at HUPHAR2024 on the vibrance of effects of different compartmental models based on public BE datasets using SAEMIX.
+License: MIT + file LICENSE
+Depends:
+    dplyr,
+    ggplot2,
+    knitr,
+    lubridate,
+    R (>= 4.0.0)
+Imports:
+    here,
+    report
+Suggests: 
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

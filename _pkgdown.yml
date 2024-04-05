@@ -1,0 +1,55 @@
+url: http://MartynK.github.io/MartysCookbook
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials, articles_docxlike, news]
+    right: [github]
+  components:
+   github:
+    text: GitHub
+    href: https://github.com/MartynK/
+   articles_docxlike:
+    text: Docx-like articles
+    menu:
+    - text: Docx document
+    - text: Cookbook, an example Quarto report
+      href: articles/example_cookbook/report.docx
+    - text: -------
+   articles:
+    text: Html-like articles
+    menu:
+    - text: Main Stuff
+    - text: Cookbook, an example Quarto report
+      href: articles/example_cookbook/report.html
+    - text: -------
+    - text: Modelling Weight with splines 
+      href: https://martynk.github.io/Martysweight/articles/splines_vignette.html
+    - text: -------
+    - text: Snippets
+    - text: Relevel
+      href: articles/example_relevel/relevel_report_quick.html
+  
+    
+home:
+  sidebar:
+    structure: [license, citation, authors, custom, dev]
+    components:
+      # Motherf only 'allows' for one component...?
+      custom:
+        title: Funding
+        text: We are *grateful* for funding!
+
+
+description: 
+  Updates about the yourpackage package.
+  
+footer:
+  structure: 
+    left: [authors]
+    right: [contact]
+  components:
+    authors: Márton Kiss MD, applied biostatistician
+    contact: Questions, comments, opportunities welcome at inquiries.mkmarton@gmail.com.
+
+    
+    
