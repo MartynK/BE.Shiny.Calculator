@@ -3,16 +3,10 @@
 
 # Before we begin
 
-- Do **not** use ’\_’ in the project’s name
-- Do **not** copy the .git folder to the project folder!
-- Do initialize your repo on GitHub
-- Do clone your repo onto a folder on your local machine
-- Do open a new ‘devel’ branch
-- Do copy the template stuff into the new folder now on said branch
 - Do update the ‘PROJECTNAME’ parts
 - Do some actual work (optional)
 
-# PROJECTNAME
+# BE Shiny Calculator
 
 <!-- badges: start -->
 
@@ -22,8 +16,9 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/PROJECTNAME)](https://CRAN.R-project.org/package=PROJECTNAME)
 <!-- badges: end -->
 
-The goal of PROJECTNAME is to … Have a home of my template for a new
-project.
+The goal of this project is to build a small Shiny application which
+aids in the sample size calculation for BE studies and to extract the
+information for ISCV from reported confidence limits.
 
 As a reminder for myself, at each version bump I need to update:
 
@@ -49,7 +44,7 @@ You can install the development version of PROJECTNAME from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("MartynK/MartysProjectTemplate")
+devtools::install_github("MartynK/BE.Shiny.Calculator")
 ```
 
 You’d need to have R and RStudio installed on your computer for the full

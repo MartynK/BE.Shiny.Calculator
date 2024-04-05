@@ -1,9 +1,9 @@
-Package: HUPHAR2024.PK.presentation
-Title: Vibrance of effects in compartmental PK models INCOMPLETE DEFUNCT
-Version: 0.2.0
+Package: BE.Shiny.Calculator
+Title: A small Shiny calculator to help with BE planning stuff.
+Version: 0.1.0
 Authors@R: 
     person("Márton", "Kiss", , "mrkmarton@gmail.com", role = c("aut", "cre"))
-Description: Repo for my (planned) presentation at HUPHAR2024 on the vibrance of effects of different compartmental models based on public BE datasets using SAEMIX.
+Description: Repo for my a small Shiny application which aids in the sample size calculation for BE studies and to extract the information for ISCV from reported confidence limits.
 License: MIT + file LICENSE
 Depends:
     dplyr,
