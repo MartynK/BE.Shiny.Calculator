@@ -2,8 +2,6 @@
 library(shiny)
 library(readxl)
 library(dplyr)
-library(lubridate)
-library(ggplot2)
 library(PowerTOST)
 
 # Copied from https://bebac.at/articles/Power-Table.phtml
@@ -646,8 +644,8 @@ ui <- fluidPage(
                           "3x3"="3x3")),
 
 
-            # Download button
-            downloadButton("downloadData", "Download results"),
+            # # Download button
+            # downloadButton("downloadData", "Download results"),
 
             # Add your discreet message at the bottom
             tags$hr(),  # Horizontal line for separation
@@ -724,15 +722,15 @@ server <- function(input, output) {
                                   hover = TRUE,
                                   digits = c(2,0,0))
 
-  # Server response for download
-  output$downloadData <- downloadHandler(
-    filename = function() {
-      "calculate_daily_data.xlsx"
-    },
-    content = function(file) {
-      file.copy("calculate_daily_data.xlsx", file)
-    }
-  )
+  # # Server response for download
+  # output$downloadData <- downloadHandler(
+  #   filename = function() {
+  #     "calculate_daily_data.xlsx"
+  #   },
+  #   content = function(file) {
+  #     file.copy("calculate_daily_data.xlsx", file)
+  #   }
+  # )
 }
 
 # Run the application
